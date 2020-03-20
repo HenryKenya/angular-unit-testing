@@ -5,13 +5,13 @@ A simple application to demonstrate how to write unit tests using Jasmine in Ang
 The test focuses on testing components and services.
 
 ## Topics covered
-1.Unit tests for components
-2.Unit tests for services
-3.Using MockData in services
-4.Creating spys and spyObjects and how to use them
-5.fakeAsync 
-6.Testing event handlers like button clicks
-7.Checking for html elements
+1. Unit tests for components
+2. Unit tests for services
+3. Using MockData in services
+4. Creating spys and spyObjects and how to use them
+5. fakeAsync 
+6. Testing event handlers like button clicks
+7. Checking for html elements
 
 ## Running the app
 
