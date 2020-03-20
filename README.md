@@ -1,27 +1,32 @@
 # TestingApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.24.
+A simple application to demonstrate how to write unit tests using Jasmine in Angular.
 
-## Development server
+The test focuses on testing components and services.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Topics covered
+⋅⋅* Unit tests for components
+⋅⋅* Unit tests for services
+⋅⋅* Using MockData in services
+⋅⋅* Creating spys and spyObjects and how to use them
+⋅⋅* fakeAsync 
+⋅⋅* Testing event handlers like button clicks
+⋅⋅* Checking for html elements
 
-## Code scaffolding
+## Running the app
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To begin using the application, clone the repo and run the command `npm install`
 
-## Build
+To begin the development server, run the command `ng serve`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Running the tests
 
-## Running unit tests
+To run tests and see which one passes run `ng test`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To see the test coverage, run `ng test --test-coverage`
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Acknowledgments
 
-## Further help
+[Typicode json placeholder](https://jsonplaceholder.typicode.com/) was used fetching and posting data
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
