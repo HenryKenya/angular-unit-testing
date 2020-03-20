@@ -1,4 +1,4 @@
-# TestingApp
+# Angular Unit Testing Fundamentals
 
 A simple application to demonstrate how to write unit tests using Jasmine in Angular.
 
