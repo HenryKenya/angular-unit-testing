@@ -1,6 +1,6 @@
 # Angular Unit Testing Fundamentals
 
-A simple application to demonstrate how to write unit tests using Jasmine in Angular.
+A simple application to demonstrate fundamentals of how to write unit tests using Jasmine in Angular.
 
 The test focuses on testing components and services.
 
