@@ -8,7 +8,9 @@ import { DataService } from './data.service';
 })
 export class AppComponent implements OnInit{
   
-  data: any[] = []
+  title: string = "Angular Testing";
+
+  data: any[] = [];
 
   constructor(private dataService: DataService) {
 

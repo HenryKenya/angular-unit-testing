@@ -16,8 +16,8 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
-      imports: [ CommonModule, BrowserModule, BrowserAnimationsModule ],
-      providers: [ DataService, HttpClient, HttpHandler ]
+      imports: [CommonModule, BrowserModule, BrowserAnimationsModule],
+      providers: [DataService, HttpClient, HttpHandler]
     }).compileComponents();
 
     fixture = TestBed.createComponent(AppComponent);
@@ -31,24 +31,24 @@ describe('AppComponent', () => {
     expect(component).toBeTruthy()
   });
 
-  it('should call function for fetching data when button is clicked', fakeAsync(() => {
-    const button = fixture.debugElement.query(By.css('.btn')).nativeElement
+  it('should contain a title of Angular testing and a button', () => {
+    const h1Element = fixture.debugElement.nativeElement.querySelector('.title')
+    expect(h1Element.textContent).toContain('Angular Testing')
+  })
 
-    const spyComponent = spyOn(component, 'showData')
+  it('should call showData and fetch Data(from service) when button is clicked',() => {
+    const showDataSpy = spyOn(component, 'showData').and.callThrough()
+
+    const fetchDataSpy = spyOn(dataService, 'fetchData').and.callThrough()
     
-    button.click()
+    fixture.debugElement.query(By.css('.btn')).triggerEventHandler('click', null)
 
-    tick(1000)
+    fixture.detectChanges()
 
-    expect(spyComponent).toHaveBeenCalled()
-    
-  }))
+    expect(showDataSpy).toHaveBeenCalled()
+    expect(fetchDataSpy).toHaveBeenCalled()
 
-  it('should populate list with data when method showData is successfully called', fakeAsync(() => {
-
-    const spyComponent = spyOn(component, 'showData').and.callThrough()
-    const spyService = spyOn(dataService, 'fetchData').and.callThrough()
-
-  }))
+  })
 
 });
+
