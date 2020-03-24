@@ -36,7 +36,7 @@ describe('AppComponent', () => {
     expect(h1Element.textContent).toContain('Angular Testing')
   })
 
-  it('should call showData and dataService::fetchData when button is clicked',() => {
+  it('should call showData and fetch Data(from service) when button is clicked',() => {
     const showDataSpy = spyOn(component, 'showData').and.callThrough()
 
     const fetchDataSpy = spyOn(dataService, 'fetchData').and.callThrough()
