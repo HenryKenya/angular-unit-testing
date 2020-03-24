@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class DataService {
 
-  private _URL: string = "https://jsonplaceholder.typicode.com/users"
+  _URL: string = "https://jsonplaceholder.typicode.com/users"
 
   constructor(private httpClient: HttpClient) { }
 
